@@ -2,11 +2,13 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('git checkout scm') {
             steps {
-                echo 'Hello World'
+		branches: [[name: 'main']],
+   		userRemoteConfigs: [[url: 'https://github.com/angelbhagat/Practical.git']]
+
+                echo 'Hello World1'
             }
         }
     }
 }
-
