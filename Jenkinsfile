@@ -6,8 +6,7 @@ pipeline {
             steps {
 		branches: [[name: 'main']],
    		userRemoteConfigs: [[url: 'https://github.com/angelbhagat/Practical.git']]
-
-                echo 'Hello World'
+		 echo 'Hello World'
             }
         }
     }
